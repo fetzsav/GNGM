@@ -3,10 +3,6 @@ import { target1, target2, target3 } from "./targets.module.js";
 import { getDiff, mintNFT } from "./ethers.module.js";
 import { getTotalCurrent } from "./alchemy.module.js";
 
-//ttd change: +12574725867831296
-//1 block before: 46286596601044660
-
-
 let current_block: number;
 let current_ttd: bigint;
 let suggested_gwei : number;
