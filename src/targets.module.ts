@@ -1,5 +1,5 @@
 import { BigNumber, Contract, ContractInterface, ethers } from "ethers";
-import { privKey, signer, abi } from "./ethers.module.js";
+import { privateKey, signer, abi } from "./ethers.module.js";
 const pubKey = "0x42AcB9d50DF9Ff4ECF191b3a18884AFBA94a0A09";
 // 58750000000000000000000
 // 20000000000000000
@@ -27,7 +27,7 @@ export const target1: targetType = {
 }.init();
 
 export const target2: targetType = {
-    address: "0xe3ffa3515511ab327340b33bdacb7e841d8bfe12",
+    address: "0x7FACAd9Eb699e4061Db832BB848e938e546e3486",
     init: function() {
         this.contract = new ethers.Contract(this.address, abi, signer);
         return this;
@@ -40,7 +40,7 @@ export const target2: targetType = {
 
 
 export const target3: targetType = {
-    address: "0xe3ffa3515511ab327340b33bdacb7e841d8bfe12",
+    address: "0xEa60A64D1456dc9A0f90a82D204B86A53e6Fb542",
     init: function() {
         this.contract = new ethers.Contract(this.address, abi, signer);
         return this;

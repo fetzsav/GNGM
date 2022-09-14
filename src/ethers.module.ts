@@ -18,8 +18,8 @@ export const mintNFT = async (contract: Contract) => {
     console.log(gas_p);
     let gwei = ethers.utils.formatUnits(gas_p, "gwei");
     console.log(gwei);
-    // let txn = await contract.mintForAddress(1, pubKey, {gasPrice: gas_p})
-    let txn = await contract.setPaused(false, {gasPrice: gas_p.mul(multiplier)})
+    let txn = await contract.mintForAddress(1, pubKey, {gasPrice: gas_p.mul(multiplier)})
+    // let txn = await contract.setPaused(false, {gasPrice: gas_p.mul(multiplier)})
     // await txn.wait();
     // console.log(`NFT Minted! Txn Hash: ${txn.hash}`)
 }
