@@ -14,4 +14,3 @@ let repeat2 = Promise.resolve().then(function resolver() {
     console.log("Error: " + error);
 });
 
-repeat2;

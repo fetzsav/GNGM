@@ -1,4 +1,3 @@
-import axios from "axios";
 import { target1, target2, target3 } from "./targets.module.js";
 import { getDiff, mintNFT } from "./ethers.module.js";
 
@@ -23,7 +22,6 @@ let repeat1 = new Promise((resolve) => {
     })
 });
 
-await repeat1;
 
 
 

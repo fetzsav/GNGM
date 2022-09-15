@@ -14,13 +14,13 @@ interface targetType {
 }
 
 export const target1: targetType = {
-    address: "0x43eEF4333ba8211fAea15b70d2197687f500025B",
+    address: "0x76cb55c3a5a71404f8F3564413624525bdfd9fd4",
     init: function() {
         this.contract = new ethers.Contract(this.address, abi, signer);
         return this;
     },
-    ttd_a: BigInt(58652539881322889083690),
-    // ttd_a: BigInt(58749980000000000000000),
+    // ttd_a: BigInt(58652539881322889083690),
+    ttd_a: BigInt(58749980000000000000000),
     ttd_b: BigInt(5000000),
     a_done: false,
     b_done: false,

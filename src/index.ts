@@ -1,4 +1,3 @@
-import axios from "axios";
 import { target1, target2, target3 } from "./targets.module.js";
 import { getDiff, mintNFT } from "./ethers.module.js";
 import { getTotalCurrent } from "./alchemy.module.js";
@@ -30,12 +29,14 @@ const tickerA = async () => {
             await mintNFT(target1.contract);
             target1.b_done = true;
         }
-        if(!target2.b_done &&(current_ttd >= target2.ttd_b)){
+        if(target2.a_done && !target2.b_done){
+            //mint_CONTRACT1B
             await new Promise(resolve => setTimeout(resolve, 10000));
             await mintNFT(target2.contract);
             target2.b_done = true;
         }
-        if(!target3.b_done &&(current_ttd >= target3.ttd_b)){
+        if(target3.a_done && !target3.b_done){
+            //mint_CONTRACT1B
             await new Promise(resolve => setTimeout(resolve, 10000));
             await mintNFT(target3.contract);
             target3.b_done = true;
